@@ -1,0 +1,34 @@
+[
+  {
+    "id": "01",
+    "cover_image": "https://media.istockphoto.com/id/1598005707/photo/wireless-communication-network-concept-smart-office.jpg?s=1024x1024&w=is&k=20&c=z1HkhSlBssVLRTP8W2w8jjKM305UrCZAHm9DOhRLVJk=",
+    "author_image": "https://media.istockphoto.com/id/1309328823/photo/headshot-portrait-of-smiling-male-employee-in-office.jpg?s=1024x1024&w=is&k=20&c=iX0adGZVKv9wS5yrs0-hpFsJBnRAacZa1DcDZ0I9Bqk=",
+    "author_name": "Mr. Raju",
+    "title": "How to get your first job as a self-taught programmer",
+    "time": "05"
+  },
+  {
+    "id": "02",
+    "cover_image": "https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&q=80&w=1931&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "author_image": "https://media.istockphoto.com/id/1300972574/photo/millennial-male-team-leader-organize-virtual-workshop-with-employees-online.jpg?s=1024x1024&w=is&k=20&c=4vOXvZRvhvchTRbYn9SknimKUNvKPZyJdGzHvtjqg_w=",
+    "author_name": "Mrs. Setara",
+    "title": "Build a portfolio, network, tailor applications",
+    "time": "09"
+  },
+  {
+    "id": "03",
+    "cover_image": "https://images.unsplash.com/photo-1550439062-609e1531270e?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "author_image": "https://media.istockphoto.com/id/1311084168/photo/overjoyed-pretty-asian-woman-look-at-camera-with-sincere-laughter.jpg?s=1024x1024&w=is&k=20&c=QMQ46nig58psiPNy6ruC8FFSkF-jUSlh17vEOfMLbgI=",
+    "author_name": "Mina Mostofa",
+    "title": "Prove your abilities, connect, and customize applications",
+    "time": "15"
+  },
+  {
+    "id": "04",
+    "cover_image": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "author_image": "https://media.istockphoto.com/id/1407759041/photo/confident-happy-beautiful-hispanic-student-girl-indoor-head-shot-portrait.jpg?s=1024x1024&w=is&k=20&c=3hNSNk_rbalqc_N2FH2MrtOgJaAOaoDebVnu7x5Qtd0=",
+    "author_name": "Beder Meye",
+    "title": "Demonstrate skills, engage, and target job hunts",
+    "time": "25"
+  }
+]

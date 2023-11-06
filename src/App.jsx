@@ -13,7 +13,6 @@ const App = () => {
 
   const [data, setData] = useState([]);
 
-  const [showBookmark, setShowBookmark] = useState(null);
 
   useEffect(() => {
     fetch("../../../public/data.json")
@@ -48,27 +47,17 @@ const App = () => {
         newBookmark.push(...previousBookmark, item);
         localStorage.setItem("bookmark", JSON.stringify(newBookmark));
         setBookmark(newBookmark);
-        showBookmarkItem(id)
+       
       }
     } else {
       
       newBookmark.push(item);
       localStorage.setItem("bookmark", JSON.stringify(newBookmark));
       setBookmark(newBookmark);
-      showBookmarkItem(id)
       
     }
   };
 
-  const showBookmarkItem = (id) =>{
-    
-    const bookmarkedItem = bookmark.find(item=>item.id === id)
-    if(!bookmarkedItem){
-      
-      setShowBookmark(true)
-    }
-    
-  }
   
 
 

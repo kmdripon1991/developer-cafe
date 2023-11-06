@@ -12,12 +12,13 @@ const App = () => {
 
   const [data, setData] = useState([]);
 
-  const [showBookmark, setShowBookmark] = useState(true);
+  const [showBookmark, setShowBookmark] = useState(null);
 
   useEffect(() => {
     fetch("../../../public/data.json")
       .then((res) => res.json())
       .then((data) => setData(data));
+     
   }, []);
 
   const handleSpentTime = (spentTime) => {
@@ -36,8 +37,6 @@ const App = () => {
     let newBookmark = [];
     const previousBookmark = JSON.parse(localStorage.getItem("bookmark"));
     if (previousBookmark) {
-      // previousBookmark.filter(pb.id === id{})
-      // newBookmark.filter(pb.id=== id)
 
       const isThisItemBookmark = previousBookmark.find(
         (singleItem) => singleItem.id === id
@@ -48,18 +47,32 @@ const App = () => {
         newBookmark.push(...previousBookmark, item);
         localStorage.setItem("bookmark", JSON.stringify(newBookmark));
         setBookmark(newBookmark);
+        showBookmarkItem(id)
       }
     } else {
       
       newBookmark.push(item);
       localStorage.setItem("bookmark", JSON.stringify(newBookmark));
       setBookmark(newBookmark);
+      showBookmarkItem(id)
       
     }
   };
 
+  const showBookmarkItem = (id) =>{
+    
+    const bookmarkedItem = bookmark.find(item=>item.id === id)
+    if(!bookmarkedItem){
+      
+      setShowBookmark(true)
+    }
+    
+  }
+  
+
+
   const notify = () => toast("All ready Bookmarked!");
-  // console.log(bookmark)
+  
 
   return (
     <div className="m-12 p-8 h-full">
@@ -71,6 +84,7 @@ const App = () => {
         handleBookmark={handleBookmark}
         bookmark={bookmark}
         toastContainer={ToastContainer}
+        showBookmark={showBookmark}
       ></Card>
       <ToastContainer />
     </div>

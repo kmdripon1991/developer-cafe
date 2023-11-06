@@ -4,7 +4,7 @@ import React from 'react';
 import SingleCard from "../SingleCard/SingleCard";
 import Bookmark from "../Bookmark/Bookmark";
 
-const Card = ({data, handleSpentTime, totalSpentTime, handleBookmark, bookmark}) => {
+const Card = ({data, handleSpentTime, totalSpentTime, handleBookmark, bookmark, showBookmark}) => {
   // console.log(data)
 
   return (
@@ -24,6 +24,7 @@ const Card = ({data, handleSpentTime, totalSpentTime, handleBookmark, bookmark})
         data={data}
         bookmark={bookmark}
         totalSpentTime={totalSpentTime}
+        showBookmark={showBookmark}
         ></Bookmark>
       </div>
     </div>

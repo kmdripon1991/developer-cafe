@@ -2,12 +2,14 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import { useEffect, useState } from "react";
+import SingleBookmark from "../SingleBookmark/SingleBookmark";
 
 
-const Bookmark = ({ totalSpentTime, bookmark, data}) => {
 
-  
+const Bookmark = ({ totalSpentTime, showBookmark}) => {
+
   const getBookmarkItem = JSON.parse(localStorage.getItem("bookmark"));
+  
 
   const [storageSpentTime, setStorageSpentTime] = useState(totalSpentTime);
   useEffect(() => {
@@ -28,12 +30,14 @@ const Bookmark = ({ totalSpentTime, bookmark, data}) => {
         <h1 className="font-bold p-8 text-base">
           Bookmarked Blogs : {getBookmarkItem ? getBookmarkItem.length : 0}
         </h1>
-        {/* {
-          showBookmark? <div className="h-20 card bg-white rounded place-items-center p-3">
-          {data.map((card)=>card.title)}
-        </div> : null
-        } */}
+        {
+          getBookmarkItem ? getBookmarkItem.map((item)=><SingleBookmark
+          key={item.id}
+          item={item}
+          ></SingleBookmark>) : null
+        }
       </div>
+      
     </div>
   );
 };

@@ -15,9 +15,9 @@ const App = () => {
 
 
   useEffect(() => {
-    fetch("../../../public/data.json")
-      .then((res) => res.json())
-      .then((data) => setData(data));
+    fetch('data.json')
+      .then(res => res.json())
+      .then(value => setData(value))
      
   }, []);
 

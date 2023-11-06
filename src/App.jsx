@@ -58,9 +58,6 @@ const App = () => {
     }
   };
 
-  
-
-
   const notify = () => toast("All ready Bookmarked!");
   
 

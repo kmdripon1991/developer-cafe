@@ -5,7 +5,7 @@ import SingleCard from "../SingleCard/SingleCard";
 import Bookmark from "../Bookmark/Bookmark";
 
 const Card = ({data, handleSpentTime, totalSpentTime, handleBookmark, bookmark, showBookmark}) => {
-  // console.log(data)
+
 
   return (
     <div className="flex gap-4 mt-16">

@@ -84,7 +84,7 @@ const App = () => {
         handleBookmark={handleBookmark}
         bookmark={bookmark}
         toastContainer={ToastContainer}
-        showBookmark={showBookmark}
+        
       ></Card>
       <ToastContainer />
     </div>

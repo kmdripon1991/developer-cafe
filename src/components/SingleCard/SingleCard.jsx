@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { ToastContainer, toast } from 'react-toastify';
 
 
 const SingleCard = ({card, handleSpentTime, handleBookmark}) => {

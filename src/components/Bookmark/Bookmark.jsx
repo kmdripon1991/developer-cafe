@@ -6,7 +6,7 @@ import SingleBookmark from "../SingleBookmark/SingleBookmark";
 
 
 
-const Bookmark = ({ totalSpentTime, showBookmark}) => {
+const Bookmark = ({ totalSpentTime}) => {
 
   const getBookmarkItem = JSON.parse(localStorage.getItem("bookmark"));
   

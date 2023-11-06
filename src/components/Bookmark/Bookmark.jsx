@@ -23,7 +23,7 @@ const Bookmark = ({ totalSpentTime}) => {
     <div className="sticky top-0 mt-4">
       <div className="rounded-lg bg-slate-200 mb-2">
         <h1 className="font-bold p-12 text-base text-violet-950">
-          Spent time on read : {storageSpentTime ? storageSpentTime : 0}
+          Spent time on read : {storageSpentTime ? storageSpentTime : 0} min
         </h1>
       </div>
       <div className="rounded-lg bg-slate-200 my-2 h-screen px-4">

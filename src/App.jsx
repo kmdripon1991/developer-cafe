@@ -5,6 +5,7 @@ import Card from "./components/Cards/Card";
 import Navbar from "./components/Navbar/Navbar";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Blogs from "./components/Blogs/Blogs";
 
 const App = () => {
   const [totalSpentTime, setTotalSpentTime] = useState(0);
@@ -86,6 +87,7 @@ const App = () => {
         toastContainer={ToastContainer}
         
       ></Card>
+      <Blogs></Blogs>
       <ToastContainer />
     </div>
   );
